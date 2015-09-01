@@ -1,4 +1,4 @@
 class Lit:
-    def __init__(self,lit=dict({}),**props):
+    def __init__(self,dct=dict({}),**props):
         self.__dict__.update(props)
-        self.__dict__.update(lit)
+        self.__dict__.update(dct)
