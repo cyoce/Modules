@@ -12,7 +12,6 @@ class Colors:
             }
     def cprint(self, text, *colors):
         color = ''
-
         for clr in colors:
             if clr != '' : color += self.colors[clr]
         print(color + text + (self.colors['ENDC'] * len(colors)))
