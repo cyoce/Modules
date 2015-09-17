@@ -17,7 +17,7 @@ def sigma(a=None,b=None,c=None,enum=False):
             if hasattr(c,'__call__'): fn = b
         vals = list(range(mn,mx+1))
     vals = list(map(fn,vals))
-    sm = 0
+    sm = 0 
     out = []
     for i,x in enumerate(vals):
         sm += x

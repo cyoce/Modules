@@ -3,7 +3,7 @@ def plot(a=None,b=None,c=None,scale=10):
     f = lambda x: x ** 2
     _min = -20
     _max = 20
-    if hasattr(a,'__call__') or type(a) == list:
+    if hasattr(a,'__call__')   or type(a) == list:
         f = a
     elif hasattr(b,'__call__') or type(b) == list:
         f = b
